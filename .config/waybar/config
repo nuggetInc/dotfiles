@@ -81,7 +81,7 @@
         "tooltip-format": "<big>{:%B %Y}</big>\n<tt><small>{calendar}</small></tt>"
     },
     "clock#time": {
-        "format": " {:%I:%M}",
+        "format": " {:%H:%M}",
         "tooltip-format": "<big>{:%B %Y}</big>\n<tt><small>{calendar}</small></tt>"
     },
     "battery": {
