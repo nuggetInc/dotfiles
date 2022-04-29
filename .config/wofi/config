@@ -1,0 +1,10 @@
+width=250
+height=95%
+mode=drun
+orientation=vertical
+matching=contains
+insensitive=true
+term=kitty
+filter_rate=100
+location=top_left
+layer=overlay

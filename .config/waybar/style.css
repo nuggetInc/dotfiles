@@ -1,0 +1,105 @@
+window#waybar {
+    background: #002b36;
+    color: #fdf6e3;
+
+    font-family: 'SauceCodePro Nerd Font';
+    font-size: 12px;
+    font-weight: bold;
+}
+
+#workspaces button {
+    padding: 0 .5rem;
+
+    color: #d33682;
+
+    border: none;
+    border-radius: 0;
+
+    transition: background-color .2s, color .2s;
+}
+
+#workspaces button:hover {
+    background: #d33682;
+    color: #002b36;
+
+    text-shadow: inherit;
+}
+
+#workspaces button.focused {
+    background: #d33682;
+    color: #fdf6e3;
+}
+
+#workspaces button.urgent {
+    background: #ff5555;
+    color: #fdf6e3;
+}
+
+#mode {
+    padding: 0 .5rem;
+
+    background: #d33682;
+}
+
+#network,
+#disk,
+#cpu,
+#memory,
+#pulseaudio,
+#clock,
+#battery,
+#tray {
+    padding: 0 5px;
+}
+
+#network {
+    color: #2aa198;
+}
+
+#disk {
+    color: #268bd2;
+}
+
+#cpu {
+    color: #6c71c4;
+}
+
+#memory {
+    color: #d33682;
+}
+
+#pulseaudio.output {
+    color: #2aa198;
+}
+
+#pulseaudio.input {
+    color: #268bd2;
+}
+
+#clock.date {
+    color: #6c71c4;
+}
+
+#clock.time {
+    color: #d33682;
+}
+
+#battery.full {
+    color: #859900;
+}
+
+#battery.medium {
+    color: #cb4b16;
+}
+
+#battery.low {
+    color: #dc322f;
+}
+
+#battery.critical {
+    background: #dc322f;
+}
+
+#tray {
+    border-color: #bd93f9;
+}
