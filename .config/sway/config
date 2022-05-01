@@ -75,6 +75,7 @@ bindsym $mod+Shift+3 move container to workspace number $ws3
 bindsym $mod+Shift+4 move container to workspace number $ws4
 
 bindsym $mod+l exec swaylock -f -c 000000
+bindsym $mod+Tab workspace back_and_forth
 bindsym $mod+Shift+q kill
 bindsym $mod+Shift+c reload
 bindsym $mod+Shift+e exit
