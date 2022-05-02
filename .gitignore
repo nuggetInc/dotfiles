@@ -14,3 +14,5 @@
 !.config/waybar/*
 !.config/wofi/
 !.config/wofi/*
+!.config/swaylock/
+!.config/swaylock/*
