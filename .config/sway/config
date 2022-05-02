@@ -17,11 +17,14 @@ font pango: SauceCodePro Nerd Font 8
 exec --no-startup-id kitty
 bindsym $mod+Return exec kitty
 
+set $lock "swaylock --indicator --clock --datestr %d/%m/%Y --screenshots --effect-blur 8x2 --effect-vignette 0.6:0.4 --effect-greyscale --fade-in 1"
 # Lock after timeout 
 exec swayidle -w \
-         timeout 120 'swaylock -f -c 000000' \
+         timeout 120 $lock \
          timeout 180 'swaymsg "output * dpms off"' resume 'swaymsg "output * dpms on"' \
-         before-sleep 'swaylock -f -c 000000'
+         before-sleep $lock
+
+bindsym $mod+l exec $lock
 
 # Open application selection
 bindsym $mod+d exec --no-startup-id wofi
@@ -74,7 +77,6 @@ bindsym $mod+Shift+2 move container to workspace number $ws2
 bindsym $mod+Shift+3 move container to workspace number $ws3
 bindsym $mod+Shift+4 move container to workspace number $ws4
 
-bindsym $mod+l exec swaylock -f -c 000000
 bindsym $mod+Tab workspace back_and_forth
 bindsym $mod+Shift+q kill
 bindsym $mod+Shift+c reload
