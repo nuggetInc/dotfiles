@@ -3,7 +3,7 @@ set $mod Mod4
 
 # No titlebars for windows
 default_border pixel
-gaps inner 10
+smart_borders on
 
 # Idk if both of these have to be used
 for_window [class=".*"] opacity 0.98
@@ -31,6 +31,9 @@ bindsym $mod+d exec --no-startup-id wofi
 # Disable touchpad
 input 10182:480:DELL09ED:00_27C6:01E0_Touchpad events disabled
 
+# Temporarily disabled until I figure out how to paste to windows
+#bindsym $mod+c exec wl-paste --primary | wl-copy
+#bindsym $mod+v exec wl-paste
 
 # Focus windows
 bindsym $mod+Left focus left
@@ -119,8 +122,6 @@ client.focused          $focused    $focused    $text $focused    $focused
 client.focused_inactive $inactive   $inactive   $text $inactive   $inactive
 client.unfocused        $unfocussed $unfocussed $text $unfocussed $unfocussed
 client.urgent           $urgent     $urgent     $text $urgent     $urgent
-
-client.background       #002b36
 
 bar {
     font pango: SauceCodePro Nerd Font 8
