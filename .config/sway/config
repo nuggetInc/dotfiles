@@ -19,8 +19,7 @@ bindsym $mod+Return exec kitty
 
 # Lock after timeout 
 exec swayidle -w \
-         timeout 120 swaylock \
-         timeout 180 'swaymsg "output * dpms off"' resume 'swaymsg "output * dpms on"' \
+         timeout 120 swaylock --grace 5 \
          before-sleep swaylock
 
 bindsym $mod+l exec swaylock
